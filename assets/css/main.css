@@ -1019,7 +1019,7 @@
     color: var(--text-color);
     line-height: 1.8rem;
     height: 3.6rem;
-    margin: 10px;
+    margin: 10px 10px 6px;
     overflow: hidden;
     /* neu trinh duyet ko ho tro webkit thi display: block va su dung them 2 thuoc tinh de co dau ... nhung chi duoc 1 line*/
     display: block;         
@@ -1031,32 +1031,77 @@
     -webkit-line-clamp: 2;
 }
 
-.home-product-item__price-old {
+.home-product-item__price {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
 
+.home-product-item__price-old {
+    margin-left: 10px;
+    font-size: 1.4rem;
+    color: #666;
+    text-decoration: line-through;
 }
 
 .home-product-item__price-current {
-
+    margin-left: 10px;
+    font-size: 1.6rem;
+    color: var(--primary-color);
 }
 
 .home-product-item__action {
-
+    display: flex;
+    justify-content: space-between;
+    margin: 6px 10px 0;
 }
 
 .home-product-item__like {
+    font-size: 1.3rem;
+}
 
+i.home-product-item__like-icon-fill {
+    color: #f63d30;
+    display: none;
+}
+
+.home-product-item__like--liked .home-product-item__like-icon-fill {
+    display: inline-block;
+}
+
+.home-product-item__like--liked .home-product-item__like-icon-empty  {
+    display: none;
 }
 
 .home-product-item__rating {
+    /* Khi ko the dung font-size de thu nho */
+    font-size: 1rem;
+    transform: scale(0.8);
+    transform-origin: right;
+    color: #d5d5d5;
+    margin-left:-1px 0 0 auto;
+}
 
+.home-product-item__star--gold {
+    color: var(--star-gold-color);
+}
+
+.home-product-item__sold {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin-left: 6px;
 }
 
 .home-product-item__origin {
-
+    display: flex;
+    margin: 3px 10px 0;
+    color: #595959;
+    font-size: 1.2rem;
+    font-weight: 300;
 }
 
 .home-product-item__brand {
-
+    margin-right: auto;
 }
 
 .home-product-item__origin-name {
