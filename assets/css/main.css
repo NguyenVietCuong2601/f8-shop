@@ -500,6 +500,7 @@
 
 .header__mobile-search {
     padding: 0 12px;
+    display: none;
 }
 
 .header__mobile-search-icon {
@@ -1027,7 +1028,7 @@
 
 /*---------------------------------- Mobile category ----------------------------------*/
 .mobile-category {
-
+    display: none;
 }
 
 .mobile-category__list {
@@ -1077,6 +1078,7 @@
     border-radius: 4px;
     user-select: none;
     -webkit-user-select: none;
+    padding: 0 6px;
 }
 
 
